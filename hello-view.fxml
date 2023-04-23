@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="350.0" style="-fx-background-color: #0b0c10;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.HelloController">
+   <children>
+      <Pane layoutY="54.0" prefHeight="65.0" prefWidth="350.0" style="-fx-background-color: #0f1319;">
+         <children>
+            <Label layoutX="266.0" layoutY="2.0" text="Москва" textFill="#b52c2c">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateTime" layoutX="155.0" layoutY="30.0" text="01.01.1970 00:00" textFill="#909090">
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="updateDateTime" layoutX="301.0" layoutY="8.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="26.0" style="-fx-background-color: transparent;" text="↺" textFill="#3aa0ab">
+               <font>
+                  <Font name="Tahoma" size="33.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Pane layoutY="118.0" prefHeight="323.0" prefWidth="350.0" style="-fx-background-color: #1f2833;">
+
+         <children>
+            <Button fx:id="today" layoutX="94.0" layoutY="25.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="162.0" style="-fx-background-color: #1a1a1d;" text="Сегодня" textFill="#c5c6c7">
+               <font>
+                  <Font name="Tahoma" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="tomorrow" layoutX="94.0" layoutY="80.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="162.0" style="-fx-background-color: #1a1a1d;" text="Завтра" textFill="#c5c6c7">
+               <font>
+                  <Font name="Tahoma" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="week" layoutX="94.0" layoutY="136.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="162.0" style="-fx-background-color: #1a1a1d;" text="Неделя" textFill="#c5c6c7">
+               <font>
+                  <Font name="Tahoma" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="month" layoutX="94.0" layoutY="192.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="162.0" style="-fx-background-color: #1a1a1d;" text="Месяц" textFill="#c5c6c7">
+               <font>
+                  <Font name="Tahoma" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="exit" layoutX="124.0" layoutY="251.0" mnemonicParsing="false" style="-fx-background-color: #1a1a1d;" text="Выход" textFill="#c5c6c7">
+               <font>
+                  <Font name="Tahoma" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="14.0" layoutY="14.0" text="ПРОГНОЗ ПОГОДЫ" textFill="#50d3c8">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

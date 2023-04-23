@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #0b0c10;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.MonthController">
+    <children>
+        <Pane layoutY="54.0" prefHeight="65.0" prefWidth="700.0" style="-fx-background-color: #0f1319;">
+            <children>
+                <Label layoutX="609.0" layoutY="2.0" text="Москва" textFill="#b52c2c">
+                    <font>
+                        <Font name="Tahoma Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="dateTime" layoutX="583.0" layoutY="28.0" text="01.01.1970" textFill="#909090">
+                    <font>
+                        <Font name="Tahoma Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutY="118.0" prefHeight="483.0" prefWidth="700.0" style="-fx-background-color: #1f2833;">
+            <children>
+                <Button fx:id="backButton" layoutX="14.0" layoutY="421.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="43.0" style="-fx-background-color: #1a1a1d;" text="←" textFill="#c5c6c7">
+                    <font>
+                        <Font name="Tahoma Bold" size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <RadioButton fx:id="celsius" graphicTextGap="5.0" layoutX="558.0" layoutY="431.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="51.0" text="℃" textFill="#c5c6c7">
+                    <font>
+                        <Font name="Tahoma" size="18.0" />
+                    </font>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="choice" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="fahrenheit" graphicTextGap="5.0" layoutX="628.0" layoutY="431.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="51.0" text="℉" textFill="#c5c6c7" toggleGroup="$choice">
+                    <font>
+                        <Font name="Tahoma" size="18.0" />
+                    </font>
+                </RadioButton>
+            </children>
+        </Pane>
+        <Label layoutX="14.0" layoutY="14.0" text="Месяц" textFill="#50d3c8">
+            <font>
+                <Font name="Tahoma Bold" size="24.0" />
+            </font>
+        </Label>
+      <TableView layoutY="119.0" prefHeight="406.0" prefWidth="700.0" style="-fx-background-color: #293640; -fx-font: 14px &quot;Tahoma&quot;; -fx-text-color: #FFFFFF;">
+         <columns>
+            <TableColumn fx:id="mondays" prefWidth="75.0" sortable="false" style="-fx-background-color: #344552;" text="Пн" />
+            <TableColumn fx:id="tuesdays" prefWidth="75.0" sortable="false" style="-fx-background-color: #3d4b57;" text="Вт" />
+            <TableColumn fx:id="wednesdays" prefWidth="75.0" sortable="false" style="-fx-background-color: #344552;" text="Ср" />
+            <TableColumn fx:id="thursdays" prefWidth="75.0" sortable="false" style="-fx-background-color: #3d4b57;" text="Чт" />
+            <TableColumn fx:id="fridays" prefWidth="75.0" sortable="false" style="-fx-background-color: #344552;" text="Пт" />
+            <TableColumn fx:id="saturdays" prefWidth="75.0" sortable="false" style="-fx-background-color: #3d4b57;" text="Сб" />
+            <TableColumn fx:id="sundays" prefWidth="75.0" sortable="false" style="-fx-background-color: #344552;" text="Вс" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+    </children>
+</AnchorPane>
